@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import { ScrollParallax } from "react-just-parallax";
 import Typewriter from "typewriter-effect";
-
-import { curve, heroBackground, robot } from "../assets";
+import SparklesText from "./sparkles-text";
+import { curve, heroBackground, robot, abstract } from "../assets";
 import { heroIcons } from "../constants";
 import Button from "./Button";
 import CompanyLogos from "./CompanyLogos";
@@ -25,16 +25,18 @@ const Hero = () => {
       <div ref={parallaxRef} className="container relative">
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem]">
           <h1 className="h1 mb-6">
-            Explore the Possibilities of
+            <div>
+              <SparklesText text="Ocrify" />
+            </div>
             <br />
             <Typewriter
               options={{
                 strings: [
-                  "AI Chatting",
-                  "Photo Editing",
-                  "Video Generation",
-                  "Image Generation",
-                  "Code Generation",
+                  "jpg",
+                  "png",
+                  "pdf",
+                  // "Image Generation",
+                  // "Code Generation",
                 ],
                 autoStart: true,
                 loop: true,
@@ -43,10 +45,10 @@ const Hero = () => {
           </h1>
 
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            Unleast the power of AI within Brainwave. Upgrade your productivity
-            with{" "}
+            Unleast the power of OCR to covert your images or document with{" "}
+            <br />
             <span className="inline-block relative font-semibold">
-              Brainwave
+              Ocrify
               <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2 pointer-events-none select-none"
@@ -55,7 +57,7 @@ const Hero = () => {
                 alt="Curve"
               />
             </span>
-            , the open AI chat app.
+            <br /> the best online ocr out there.
           </p>
 
           <Button href="#pricing" white>
@@ -70,7 +72,7 @@ const Hero = () => {
 
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
-                  src={robot}
+                  src={abstract}
                   className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%] pointer-events-none select-none"
                   width={1024}
                   height={490}
@@ -80,10 +82,10 @@ const Hero = () => {
                 <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
 
                 <ScrollParallax isAbsolutelyPositioned>
-                  <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
+                  <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-indigo-500 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
                     {heroIcons.map((icon, index) => (
                       <li className="p-5" key={index}>
-                        <img src={icon} width={24} height={25} alt={icon} />
+                        <img src={icon} width={30} height={30} alt={icon} />
                       </li>
                     ))}
                   </ul>
@@ -92,7 +94,7 @@ const Hero = () => {
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                    title="Code generation"
+                    title="Text Generation "
                   />
                 </ScrollParallax>
               </div>
@@ -113,8 +115,9 @@ const Hero = () => {
 
           <BackgroundCircles />
         </div>
-
-        <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
+        <div id="team">
+          <CompanyLogos className="container relative z-10 mt-20 lg:block" />
+        </div>
       </div>
 
       <BottomLine />

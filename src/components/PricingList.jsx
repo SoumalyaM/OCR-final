@@ -18,7 +18,7 @@ const PricingList = () => {
           <div className="flex items-center h-[5.5rem] mb-6">
             {plan.price && (
               <>
-                <div className="h-3">$</div>
+                <div className="h-3">₹</div>
                 <div className="text-[5.5rem] leading-none font-bold">
                   {plan.price}
                 </div>
@@ -31,7 +31,7 @@ const PricingList = () => {
             href={plan.price ? "#" : "mailto:info@example.com"}
             white={!plan.premium}
           >
-            {plan.price ? "Get started" : "Contact us"}
+            {plan.price ? "Buy" : "Lessssgoooo"}
           </Button>
 
           <ul>

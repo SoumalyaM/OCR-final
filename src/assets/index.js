@@ -21,9 +21,14 @@ import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
 import background from "./background.jpg";
+import noun1 from "./noun1.svg";
+import noun2 from "./noun2.svg";
+import noun3 from "./noun3.svg";
+import noun4 from "./noun4.svg";
 
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
+import abstract from "./hero/abstract.jpg";
 import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
@@ -40,6 +45,8 @@ import slack from "./collaboration/slack.png";
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
 import service3 from "./services/service-3.png";
+import compareimage from "./compare-image.jpg";
+import compareresult from "./compare-result.png";
 
 import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
@@ -57,6 +64,7 @@ import notification1 from "./notification/image-1.png";
 import notification2 from "./notification/image-2.png";
 import notification3 from "./notification/image-3.png";
 import notification4 from "./notification/image-4.png";
+import ocranimation from "./notification/ocr-animation.gif";
 
 import benefitCard1 from "./benefits/card-1.svg";
 import benefitCard2 from "./benefits/card-2.svg";
@@ -76,7 +84,24 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
+import sabarni from "./sabarni.png";
+import arka from "./arkyaprabha.png";
+import preety from "./preety.png";
+import herohiralal from "./herohiralal.png";
+
 export {
+  herohiralal,
+  sabarni,
+  arka,
+  preety,
+  compareresult,
+  compareimage,
+  noun1,
+  noun2,
+  noun3,
+  noun4,
+  ocranimation,
+  abstract,
   brainwave,
   check,
   check2,

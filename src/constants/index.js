@@ -34,32 +34,52 @@ import {
   telegram,
   twitter,
   yourlogo,
+  noun1,
+  noun2,
+  noun3,
+  noun4,
+  sabarni,
+  arka,
+  preety,
+  herohiralal,
 } from "../assets";
 import { links } from "../config";
 
 export const navigation = [
   {
     id: "0",
+    title: "team",
+    url: "#team",
+  },
+  {
+    id: "1",
     title: "Features",
     url: "#features",
   },
   {
-    id: "1",
-    title: "Pricing",
-    url: "#pricing",
-  },
-  {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
+    title: "Technologies",
+    url: "#technology",
   },
   {
     id: "3",
-    title: "Roadmap",
+    title: "Demo",
+    url: "#how-to-use",
+  },
+
+  {
+    id: "4",
+    title: "Pricing",
+    url: "#pricing",
+  },
+
+  {
+    id: "5",
+    title: "Testimonials",
     url: "#roadmap",
   },
   {
-    id: "4",
+    id: "6",
     title: "Source Code",
     url: links.sourceCode,
     onlyMobile: true,
@@ -67,11 +87,11 @@ export const navigation = [
   },
 ];
 
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
+export const heroIcons = [noun1, noun2, noun3, noun4];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [sabarni, arka, preety, herohiralal];
 
 export const brainwaveServices = [
   "Photo generating",
@@ -90,55 +110,59 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
-    status: "done",
+    // title: "Voice recognition",
+    // text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
+    // date: "May 2023",
+    status: "progress",
     imageUrl: roadmap1,
     colorful: true,
   },
   {
     id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
+    // title: "Gamification",
+    // text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
+    // date: "May 2023",
     status: "progress",
     imageUrl: roadmap2,
   },
   {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
-    status: "done",
+    // title: "Chatbot customization",
+    // text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
+    // date: "May 2023",
+    status: "progress",
     imageUrl: roadmap3,
   },
   {
     id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
+    // title: "Integration with APIs",
+    // text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
+    // date: "May 2023",
     status: "progress",
     imageUrl: roadmap4,
   },
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "Topnotch technologies used to give you a seamless experience";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "ReactJS",
     text: collabText,
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Flask",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "AWS",
+  },
+  {
+    id: "3",
+    title: "Github",
   },
 ];
 
@@ -205,23 +229,23 @@ export const pricing = [
   {
     id: "0",
     title: "Basic",
-    description: "AI chatbot, personalized recommendations",
+    description: "Basic ocr services",
     price: "0",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "upload JPG, PNG, and PDF files for text extraction",
+      "Support drag-and-drop functionality, as well as file selection from the device",
+      "Provide easy options to export extracted text in various formats (plain text, PDF, Word)",
     ],
     premium: false,
   },
   {
     id: "1",
     title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
+    description: "Advanced features",
+    price: "500",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
+      "Ensure secure file uploads and downloads through encryption (SSL/HTTPS)",
+      "Enable integration with cloud storage services like Google Drive or Dropbox for direct saving",
       "Priority support to solve issues quickly",
     ],
     premium: true,
@@ -229,12 +253,12 @@ export const pricing = [
   {
     id: "2",
     title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
+    description: "jhakanaka bpr spr",
     price: null,
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Ensure secure file uploads and downloads through encryption (SSL/HTTPS)",
+      "Implement auto-deletion of uploaded files after a set period to maintain privacy",
+      "Allow users to email the extracted text or download it as a compressed file for multiple documents",
     ],
     premium: false,
   },
@@ -243,16 +267,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Multi-format File Upload",
+    text: "Allow users to upload JPG, PNG, and PDF files for text extraction, Support drag-and-drop functionality, as well as file selection from the device.",
     backgroundUrl: "/src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Advanced Text Recognition",
+    text: "Utilize cutting-edge OCR algorithms to accurately recognize text from images and PDFs.",
     backgroundUrl: "/src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -260,16 +284,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Real-time Preview of Extracted Text",
+    text: "Provide users with a live preview of the extracted text as the OCR process runs, Highlight errors or uncertain characters in the preview for user correction.",
     backgroundUrl: "/src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Editable Output",
+    text: "Allow users to edit extracted text before downloading or saving it, provide options to copy the text to clipboard or download it in TXT format.",
     backgroundUrl: "/src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -277,16 +301,16 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Secure File Handling",
+    text: "Ensure secure file uploads and downloads through encryption (SSL/HTTPS), Implement auto-deletion of uploaded files after a set period to maintain privacy.",
     backgroundUrl: "/src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Download and Export Options",
+    text: "Provide easy options to export extracted text in various formats (plain text, PDF).",
     backgroundUrl: "/src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
