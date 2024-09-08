@@ -141,8 +141,6 @@ const Collaboration = () => {
               </li>
             ))}
           </ul>
-
-          <Button>Try it now</Button>
         </div>
 
         <div className="lg:ml-auto xl:w-[38rem] mt-4">

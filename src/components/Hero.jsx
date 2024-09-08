@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { ScrollParallax } from "react-just-parallax";
 import Typewriter from "typewriter-effect";
 import SparklesText from "./sparkles-text";
@@ -10,8 +10,12 @@ import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
 import Generating from "./Generating";
 import Notification from "./Notification";
 import Section from "./Section";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
+  useEffect(() => {
+    window.scrollTo(0, 150);
+  }, []);
   const parallaxRef = useRef(null);
 
   return (
@@ -60,9 +64,11 @@ const Hero = () => {
             <br /> the best online ocr out there.
           </p>
 
-          <Button href="#pricing" white>
-            Get started
-          </Button>
+          <Link to="/input">
+            <Button href="#pricing" white>
+              Get started
+            </Button>
+          </Link>
         </div>
 
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
