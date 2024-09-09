@@ -84,6 +84,7 @@ export const navigation = [
     url: "/input",
     onlyMobile: true,
     external: true,
+    useReactRouting: true,
   },
 ];
 
