@@ -32,8 +32,8 @@ const LandingPage = () => (
 const App = () => {
   return (
     <div>
-      <div className="bg-gray-800 text-white p-4 `fixed top-0 left-0 w-full z-50 border-b  border-n-6 lg:bg-n-8/90 lg:bg-blur-sm">
-        <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
+      <div className="bg-n-8/90 backdrop-blur-sm text-white p-4 `fixed top-0 left-0 w-full z-50 border-b  border-n-6 lg:bg-n-8/90 lg:bg-blur-sm">
+        <div className="flex items-center h-[30px] px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
           <Link to="/" className="block w-[12rem] xl:mr-8" href="#hero">
             <p className="text-3xl">Ocrify</p>
           </Link>
