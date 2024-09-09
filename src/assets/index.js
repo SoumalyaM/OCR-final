@@ -88,8 +88,10 @@ import sabarni from "./sabarni.png";
 import arka from "./arkyaprabha.png";
 import preety from "./preety.png";
 import herohiralal from "./herohiralal.png";
+import logo from "./logo.png";
 
 export {
+  logo,
   herohiralal,
   sabarni,
   arka,
