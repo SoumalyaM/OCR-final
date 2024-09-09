@@ -80,8 +80,8 @@ export const navigation = [
   },
   {
     id: "6",
-    title: "Source Code",
-    url: links.sourceCode,
+    title: "Let's Ocrify",
+    url: "/input",
     onlyMobile: true,
     external: true,
   },
