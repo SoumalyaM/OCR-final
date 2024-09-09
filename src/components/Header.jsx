@@ -39,7 +39,7 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <Link to="/" className="block w-[12rem] xl:mr-8" href="#hero">
+        <a to="/" className="block w-[12rem] xl:mr-8" href="#hero">
           {/* <img
             src={brainwave}
             width={190}
@@ -48,7 +48,7 @@ const Header = () => {
             className="pointer-events-none select-none"
           /> */}
           <p className="text-3xl">Ocrify</p>
-        </Link>
+        </a>
 
         <nav
           className={`${
